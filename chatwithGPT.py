@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Set the title of the Streamlit app
-st.title("Chess with GPT-4 Turbo")
+st.title("Chat with GPT-4 Turbo")
 
 # Initialize the OpenAI client with API key
 client = OpenAI(
@@ -22,11 +22,11 @@ client = OpenAI(
 
 # Check if 'openai_model' is in session state, if not set it to 'gpt-4-turbo'
 if "openai_model" not in st.session_state:
-    st.session_state["openai_model"] = "gpt-4-turbo" # Use any model that OpenAI supports https://platform.openai.com/docs/models
+    st.session_state["openai_model"] = "gpt-4-turbo" # Use any model that OpenAI supports from https://platform.openai.com/docs/models
 
 # Check if 'messages' is in session state, if not set it to a default message
 if "messages" not in st.session_state:
-    st.session_state.messages = [{"role": "system", "content": "You are a chess grandmaster"}]
+    st.session_state.messages = [{"role": "system", "content": "You are a helpful assistant"}]
 
 # Display the messages in the chat
 for message in st.session_state.messages:
