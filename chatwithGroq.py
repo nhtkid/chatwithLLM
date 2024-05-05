@@ -1,3 +1,4 @@
+# Groq is an inference engine that supports multiple LLMs including LLaMA and Mixtral
 # Install necessary packages
 # pip install streamlit groq dotenv
 
@@ -10,7 +11,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Set up Streamlit app with any title you like
-st.title("Chess with LLaMA3 70b")
+st.title("Chat with Groq")
 
 # Initialize Groq client with API key from environment variable
 client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
