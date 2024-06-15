@@ -2,7 +2,7 @@ import requests
 import streamlit as st
 import json
 
-st.title("ChatGPT with Local LLM")
+st.title("ChatGPT with Local LLM with Ollama")
 
 # URL of the local Ollama server
 OLLAMA_API_URL = "http://localhost:11434/api/chat" # This is the default port
