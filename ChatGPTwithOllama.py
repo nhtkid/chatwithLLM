@@ -5,10 +5,10 @@ import json
 st.title("ChatGPT with Local LLM")
 
 # URL of the local Ollama server
-OLLAMA_API_URL = "http://localhost:11434/api/chat"
+OLLAMA_API_URL = "http://localhost:11434/api/chat" # This is the default port
 
 # Model to use
-OLLAMA_MODEL = "phi3"  # Replace with your desired model
+OLLAMA_MODEL = "phi3"  # Replace with your desired model, check Ollama website for supported models
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
